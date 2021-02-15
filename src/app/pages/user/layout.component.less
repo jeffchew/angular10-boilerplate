@@ -1,0 +1,93 @@
+.example-container {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+.example-sidenav {
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border-right: 1px solid #121212;
+
+  img {
+    width: 140px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+}
+
+// .example-header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+// }
+
+.navbar {
+    background: #1f1f1f;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    // padding: 1.5rem 2rem;
+    color: #0e7e56;
+
+    ._container {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      margin: 0 0 0 250px;
+
+      .search {
+        width: 186px;
+        position: absolute;
+        left: 0;
+        line-height: 90px;
+        color: #fff;
+      }
+
+      .nav-links {
+        float: right;
+        line-height: 90px;
+        font-weight: 500;
+          // padding: 0 25px;
+
+          .nav-item {
+              display: inline-block;
+              margin: 0 10px;
+
+              .notif {
+                border-right: 1px solid #121212;
+                padding-right: 13px;
+              }
+
+              .settings {
+                color: #0e7e56;
+              }
+
+              .profile-image {
+                border-radius: 50%;
+                width: 40px;
+              }
+          }
+      }
+  }
+}
+
+.example-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

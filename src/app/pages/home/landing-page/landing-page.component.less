@@ -1,0 +1,94 @@
+#main-features {
+    ._container {
+        text-align: center;
+        width: 1175px;
+        padding: 75px 0 135px;
+
+        .heading {
+            padding: 0 0 75px;
+
+            h3 {
+                font-size: 35px;
+                font-weight: 600;
+            }
+
+            p {
+                max-width: 640px;
+                margin: 0 auto;
+                margin-top: 30px;
+                line-height: 25px;
+            }
+        }
+
+        .main-content {
+            position: relative;
+            .feature-img {
+                position: absolute;
+                left: 100px;
+                width: 290px;
+            }
+            .features-list {
+                margin-left: 520px;
+                text-align: left;
+                
+
+                .feature-item {
+                    display: flex;
+                    margin: 0 0 35px 0;
+
+                    .icon {
+                        width: 175px;
+                        margin: 3px 25px 0 0;
+
+                        img {
+                            width: 75px;
+                        }
+                    }
+                    .text {
+                        h4 { 
+                            font-size: 17px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            padding: 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    #main-features {
+        ._container {
+            .heading {
+
+                h3 {
+                }
+    
+                p {
+                }
+            }
+    
+            .main-content {
+                .feature-img {
+                    display: none;
+                }
+                .features-list {
+                    margin-left: 0;
+    
+                    .feature-item {
+                        .icon {
+                            img {
+                            }
+                        }
+                        .text {
+                            h4 { 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

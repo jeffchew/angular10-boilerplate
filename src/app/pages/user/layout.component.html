@@ -1,0 +1,51 @@
+<!-- <mat-sidenav-container>
+  <mat-sidenav>Start</mat-sidenav>
+  <mat-sidenav-content>Main</mat-sidenav-content>
+</mat-sidenav-container>
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="account">
+    <div class="navbar-nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
+        <a *ngIf="account.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">Admin</a>
+        <a (click)="logout()" class="nav-item nav-link">Logout</a>
+    </div>
+</nav>
+
+<router-outlet></router-outlet> -->
+
+<mat-toolbar class="navbar">
+  <div class="_container">
+    <div class="search">
+      <span class="material-icons md-18">search</span>
+    </div>
+
+    <div class="nav-links">
+        <div class="nav-item">
+          <a href="#">
+            <span class="material-icons md-18 notif">notifications</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="settings">
+            Username<span class="material-icons">keyboard_arrow_down</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#">
+            <img src="../../../assets/images/mytikas-profile.jpg" alt="" class="profile-image">
+          </a>
+        </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+      <img class="logo" src="../../../assets/images/logo.png" alt="">
+    </mat-sidenav>
+
+    <mat-sidenav-content [formGroup]="options">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
